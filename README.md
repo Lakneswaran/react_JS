@@ -37,5 +37,14 @@ Basics &amp; Theory a small testings
 ## Creating React APP Using CLi
 
 - npx create-react-app project-name
+- Public, src and package.json file.
+- when you change something in App.js automatically changes in the browser without reload. - Hot reload.
+- Webpack tool maintain everything inside the json file. 
+- You can change the configuration of the webpack with "run eject".
+- Public folder - index.html -> <div id="root"></div> in this root we are going to mount our application.
+- src -> index.js -> starting point of our application.
+- ReactDOM.render(two arguments) - (JSX, DOM element) -> We are rendering this JSX into DOM.
+- App.js is a functional component. 
+
 
 
