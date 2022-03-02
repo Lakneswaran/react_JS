@@ -51,7 +51,15 @@ Basics &amp; Theory a small testings
 - export default class Newcomponent extends React.Component{} - that class will act as react comp.
 - There's a render function -> it's render the Html JS. return<div>
 - We need to import this component in APP.js
-- 
+- html using attributes <p name="hello"> => in react props. 
+- In component we can access this property title. return <div>{ this.props.name } </div>
+- we extends the component from the react component, so we have also access to { this.props }
+- When we passing html attribute in App.js in component getting that as an object with properties.
+- So we can pass data from parent comp. App() -> child comp.
+- To access variable name inside JSX with {name + "Kris"}
+- React is consider all inside {} as JS. 
 
-![class_component_props] (/public/asset/Class component_props.PNG)
+
+
+![PBC Diagram](public/asset/class_component_props.PNG)
 
