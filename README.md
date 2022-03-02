@@ -46,5 +46,12 @@ Basics &amp; Theory a small testings
 - ReactDOM.render(two arguments) - (JSX, DOM element) -> We are rendering this JSX into DOM.
 - App.js is a functional component. 
 
+## Props & Class component
 
+- export default class Newcomponent extends React.Component{} - that class will act as react comp.
+- There's a render function -> it's render the Html JS. return<div>
+- We need to import this component in APP.js
+- 
+
+![class_component_props] (/public/asset/Class component_props.PNG)
 
