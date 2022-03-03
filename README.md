@@ -63,3 +63,13 @@ Basics &amp; Theory a small testings
 
 ![PBC Diagram](public/asset/class_component_props.PNG)
 
+
+## Functional Component
+
+- Functionalcomp.js -> using the component in app.js gives error. 
+-  in the functional comp. babbel convert the <div></div> JSX into JS -> react.create.element it will created.
+- react variable is missing -> error.
+- When we using a component, we need to import react.
+- In class component while we extending from react.Compenent, the child class get access to props and states.
+- In functional class we didn't extending anything, so we giving Functionalcomp(props) as a argument.
+
