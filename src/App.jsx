@@ -8,9 +8,9 @@ export default function App() {
   return(
     <div>
       <Newcomponent name={name + " Krish"} title="passing prop" />
-      <h1>Hello World!</h1>
+      {/* <h1>Hello World!</h1>
       <Functionalcomp name={name}/>
-      <p>First app</p>
+      <p>First app</p> */}
     </div>
   );
 }
