@@ -3,6 +3,7 @@ import React from "react";
 export default class Newcomponent extends
 React.Component{
     constructor() {
+        
         super( )
         this.clicked = this.clicked.bind(this);
         this.addstudent = this.addstudent.bind(this);
@@ -10,6 +11,11 @@ React.Component{
             name: "BeCode",
             students: 16
         }
+        console.log("This is constructor");
+    }
+
+    componentDidMount() {
+        console.log("comonentDidMount")
     }
 
     clicked() {
@@ -26,6 +32,7 @@ React.Component{
      }
 
     render() {
+        console.log("Render")
         return (
         <>
          <div className="text-4xl border-red-500 border-2 bg-yellow-100">Have a nice day { this.props.name }</div>
@@ -35,5 +42,9 @@ React.Component{
          <button onClick={this.addstudent} className="border-green-500 border bg-green-300 hover:bg-green-800">Add Student</button>
         </> 
         )
+    }
+
+    componentWillUnmount() {
+        console.log("ComponentWillUnmount, it'll active when destroyed.")
     }
 }

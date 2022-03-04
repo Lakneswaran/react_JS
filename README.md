@@ -89,10 +89,50 @@ Basics &amp; Theory a small testings
 
 ![Probs classcomp](public/asset/functiional_comp.PNG)
 
-## State in react
+## State in class component
 
 - data of the component. Every component have a state and based on that teh component how to render we'll deciding. 
 - mutability = this.state.name = ; immutability => we applying new object Rather than copying that old object key and value.
 - using spread operator to  copying current state. 
 
 ![Probs classcomp](public/asset/state_in_react.PNG)
+
+
+## state in functional component.
+
+- we did't extend fro react.Component so this. is not available. -> to solve this we using useState.
+- With using useState function inside func. comp. creating state and using that. 
+- To call the useState useState("default value") 
+- This function will return two value in Array form.
+- ES6 D-stucture using getting the values, first = variable, getter this default value. second value = setter
+- function.
+- const [getter, setter] = useState("")
+
+![Probs classcomp](public/asset/state_in_func.PNG)
+ 
+ ## Lifecycle hooks
+
+ - Component in different stages executing different function calling Lifecycle hooks.
+ - In human Life Birth working RIP, same component will create, update and destroy. 
+ - Those function will automatic execute itself.
+ - With using this we can decide how we change the component state or component rerender or not.
+ - - Mounting:  
+ -     - constructor()  - static getDerivedStateFromProps()    - render()          - componentDidMount()
+ 
+ - - Updating:  
+ -     - static getDerivedStateFromProps()  -  shouldComponentUpdate()  - render()  -getSnapshopBeforeUpdate()  - componentDidUpdate()   
+
+ - - Unmounting:  
+ -     - componentWillUnmount()                           
+ 
+- Lifecycle hooks : componentDidMount() and componentWillUnmount 
+- while component has created constructor will execute..
+- ComponentDidMount() hooks uses inside this function required API calls, value changing, we can do that inside this.
+- ComponentWillUnmount()  this function to destroy.
+- component destroy means when removing in at The DOM tree.
+
+- - This is constructor -> Render -> componentDidMount -> componentWillUnmount.
+
+
+
+![Probs classcomp](public/asset/lifecylcle_hooks.PNG)
