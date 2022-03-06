@@ -160,6 +160,40 @@ Basics &amp; Theory a small testings
 
 ![Probs classcomp](public/asset/useeffect_in_fc_MX.PNG)
 
+## Conditional rendering
+
+- Can compare with if conditional, if value is this and render something. oR render something else.
+
+![Probs classcomp](public/asset/conditional_fc.PNG)
+![Probs classcomp](public/asset/conditional_gold_fc.PNG)
+
+## List & keys using map()
+
+- The array prints in the string method.
+- <ul> {bookContent.map(item => <li key={item}>{item}</li>)} </ul>
+- With using builtin array function map() => we are creating new array. 
+- For li we passing an attribute key, because we are looping the array bookContent.
+- the values are unique, no-repeat from our code. if react, react => error. We give index, but not good 
+- practice, if some element is removed, index will change and perform will effect. index and math random
+- should nay use for keys.
+
+
+![Probs classcomp](public/asset/list_key_mapping.PNG)
+
+## Form handling
+
+- In the form submitting execute submitForm. While the input value changing should the changeBookNameFunc
+- execute. input value is bookName. 
+- If change name button pressed, the behaviors to redirect to the same page self. 
+- (e) => event the form details inside. 
+- e.preventDefault(); -> stop the reload behaviors.
+- We can't change the default name " react ", with  the help of setBookName -> change the value.
+- setBookName(e.target.value) - target is the current input.
+
+![Probs classcomp](public/asset/form.PNG)
+
+
+
 
 
 

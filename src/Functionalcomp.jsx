@@ -6,6 +6,11 @@ export default function Functionalcomp(props) {
 
     const [bookName, setBookName ] = useState("React");
     const [student, setStudent ] = useState(16);
+    const [bookContent, setBookContent ] = useState([
+        "JS",
+        "React",
+        "Internship"
+    ]);
 
 
     const clicked = e => {
@@ -40,7 +45,11 @@ export default function Functionalcomp(props) {
         </div>
         <div> Hello from Func comp</div>
         <button className="border-blue-500 border bg-blue-300 hover:bg-blue-800" onClick={clicked}>Click me</button> 
-         
+        <div className="border-violet-500 border m-6">
+           <ul>
+           {bookContent.map(item => <li key={item}>{item}</li>)} 
+           </ul>
+        </div> 
     </> 
     );
 }
