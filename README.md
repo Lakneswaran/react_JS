@@ -193,7 +193,16 @@ Basics &amp; Theory a small testings
 ![Probs classcomp](public/asset/form.PNG)
 
 
+## useRef - reacthooks
 
+- It will use when we need direct DOM accessing.  example: input focusing.
+- How tio use useRef ? import useRef. give a default value by variable. 
+- Pass that variable to where we want to ref. ref={inputEl} -> it's pointing the input tag.
+- To access this -> Use this inside useEffect. There is input value available. 
+- to access DOM -> inputEl.current.focus()
+
+![Probs classcomp](public/asset/useref_in_useeffect.PNG)
+![Probs classcomp](public/asset/input_focus.PNG)
 
 
 
