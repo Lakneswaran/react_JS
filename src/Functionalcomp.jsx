@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 
 export default function Functionalcomp(props) {
@@ -15,6 +15,22 @@ export default function Functionalcomp(props) {
     const stateFun = e => {
         setStudent(student + 1)
     };
+
+    // UseEffect in functional component
+
+    console.log("This is constructor inside the function");
+    useEffect(() => {
+        console.log("This is componentDidMount");
+        // Api call / ajax
+        return () => {
+            console.log("componentWillUnmount")
+        };
+    }, []);
+    // We can use multiple times.
+    useEffect(() => {
+        console.log("Students Increased");
+    }, [student]);
+
     return (
     <>  
         <div>
@@ -25,6 +41,6 @@ export default function Functionalcomp(props) {
         <div> Hello from Func comp</div>
         <button className="border-blue-500 border bg-blue-300 hover:bg-blue-800" onClick={clicked}>Click me</button> 
          
-    </>
+    </> 
     );
 }

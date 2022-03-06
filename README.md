@@ -128,6 +128,7 @@ Basics &amp; Theory a small testings
 - Lifecycle hooks : componentDidMount() and componentWillUnmount 
 - while component has created constructor will execute..
 - ComponentDidMount() hooks uses inside this function required API calls, value changing, we can do that inside this.
+- then teh state will update properly and rerender
 - ComponentWillUnmount()  this function to destroy.
 - component destroy means when removing in at The DOM tree.
 
@@ -136,3 +137,32 @@ Basics &amp; Theory a small testings
 
 
 ![Probs classcomp](public/asset/lifecylcle_hooks.PNG)
+
+## UseEffect in functional Component
+
+- We have used lifecycle hooks in class component. With help of useEffect function we have access to use lifecycle 
+- hooks in functional component.
+- Constructor in FC is what we wrote directly inside a function. const [] = useState()
+- useEffect function inside will be componentDidMount appear => where api call and ajax.
+- When we return a function in userEffect. then ill component destroy then it will execute 
+- return () => componentWillUnmount.
+
+
+![Probs classcomp](public/asset/useeffect_in_fc.PNG)
+
+- useState, useEffect, use... Functions are starting with use are reactHooks. 
+- The main purpose of reactHooks are USe functions that can used by FC.
+- A useEffect function can equally compare with componentDidMount.
+- UseEffect can accept two arguments. One is (function () => {} and second is a dependency array , []). 
+- If dependency array is empty, the function will execute only once while component is creating. 
+- useEffect can be reused, multiple times. 
+- We can use the dependency array when any changes in the state. const [current, previous] = useState().
+
+![Probs classcomp](public/asset/useeffect_in_fc_MX.PNG)
+
+
+
+
+
+
+
