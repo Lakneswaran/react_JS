@@ -1,5 +1,6 @@
 # react_JS
 Basics &amp; Theory a small testings 
+- Explanation about React Native -line 60
 
 ## What is React?
 
@@ -24,6 +25,17 @@ Basics &amp; Theory a small testings
 * -  JSX => <div className="shopping-list"><h1>Shopping List for {this.props.name}</h1><ul><li></li></ul></div>
 - Babel compiler JSX -> javascript
 
+## What is Virtual DOM?
+
+- Live actual DOM, virtual DOM is a node tree that lists the element and their attributes and content as 
+- Objects and their properties. React render function create a node tree out of react component. then it's
+- update this tree in response to the mutation in data model, caused by various actions done either by user
+- or system.  
+- Virtual DOM works in three steps: Whenever underline data changes the entire UI rerender in virtual DOM
+- representation. Then the difference between the previous DOM representation and new one is calculated. 
+- Once the calculation are done. The real DOM will be updated only with the thing actually changed. 
+- This makes our application much faster and there's no memories wasted.
+
 ## Components Types
 
 - Class Components
@@ -31,8 +43,54 @@ Basics &amp; Theory a small testings
 
 ## Important things to remember in React
 
-- Functional programming : functional comp. is light weighted and ease to read and creat
+- Functional programming : functional comp. is light weighted and ease to read and create
 - Immutability : Arr or Obj changing not only the value, also the variable it self.
+- Testability React views can be used as function of the state. State is an object with an mind 
+- How a component will render and behavior. Thats we easily can manipulate with state of components
+- which we passed to react view and take a look at the output and trigger action events, functions, ...
+- This makes react application quite easy to test and debug.
+- Server Side Rendering: allows you to pre render initial state by react components at server side only.
+- With SSR the server response to the browsers, becomes only HTML of the page which is now to ready to 
+- rendered. That's the browser can now start rendering without having to wait for all the JS to be loaded 
+- and executed as a result webpage load faster. The user able to see the real webpage, while react still 
+- downloading the js creating a virtual DOM linking events ,... in the backend.
+- In One-way data binding, data flows in a single direction ie from the models ro the views. 
+- increase the efficiencies.
+
+## What is React native?
+
+- React Native is a cross-platform mobile application development framework that uses JS as its base languages.
+- React Native architecture heavily relive JS run time architecture also knowns as JS bridge.
+- Write once use everywhere. working on multiple platforms. 
+- React Native allows you to add plugins and third part packages.
+- Live reload, cost efficient testing using tools such as Jest.
+
+ ## React VS React Native?
+
+ - React is used to develop Web Application. React Native for Mobile Application development.
+ - React: Facebook, Netflix, NewYorkTimes, YahooMail
+ - React Native: Instagram, Facebook ads manager.
+ - React Natives comes with all the essentials required to build the application.
+ - React is library of JS. When we use react requires multiple tools for setup and building.
+ - React does not support live reload.
+ - React native have ready mate components, react we need ti code ourself.
+
+ ## React VS React Native in code?
+
+ - React more like HTML div, h1, p => Native: View, Text, Text.
+ - we need to import it from react-native. {View, Text};
+ - to make difference between h1 and p, we need to styling. 
+ - style: div style={{height: '25px', display: 'flex', flexDirection: 'column'}}, Native : style={{height: 
+ - 25, weight: 100}}, can't use any HTML.
+ - In Native we don't use units px, pt, em.
+ - Native is flex is default. So we don't need to use it.
+ - Native have custom components Svg, path from react-native-svg.
+
+ ## React and React Native similarities. 
+
+ - Logic and state Management are same.  State, hooks, context api, reedux, props, render props, 
+ - higher order component. 
+ - check Expo.io
 
 ## Creating React APP Using CLi
 
