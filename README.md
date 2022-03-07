@@ -1,6 +1,8 @@
 # react_JS
 Basics &amp; Theory a small testings 
 - Explanation about React Native -line 60
+- Redux : line 97
+- Learning and using Tailwind css frameworks. 
 
 ## What is React?
 
@@ -88,9 +90,44 @@ Basics &amp; Theory a small testings
 
  ## React and React Native similarities. 
 
- - Logic and state Management are same.  State, hooks, context api, reedux, props, render props, 
+ - Logic and state Management are same.  State, hooks, context api, redux, props, render props, 
  - higher order component. 
  - check Expo.io
+
+## Redux
+
+- Redux is a library in JS world. At a super-high level, Redux is a tool that developers use to make their 
+- lives easier to architect an application. Complexity is smaller and
+- As many of you might have heard its job is "state management."
+- Example: a component hierarchy: shot - shotdetail - title - image -> If a data require in image. 
+- parent(shot)- child(shotdetail) - title(nested child) - then date will go to the least component(img).
+- We share that data with routing or props with difficulties to give it to img.
+- With redux we can supply any data directly to any component. - first advantage.
+- Server side communication is really important. we take one by one from data. with using redux 
+- we can handel data in bulk operation. Superstore. Data is easy to manage and distribute it.
+- Redux concept: Components - dispatch a certain thing -  Action - reach the reducers , has the power to 
+- change something - central store which is manage all the state of the application and once that changed -
+- they actually send a trigger - subscriptions - passes updated states as props - to the component. 
+
+## MVC VS FLUX vS Redux
+
+- MVC : Model View Controller : Architectural design pattern for developing UI.
+- Model where is our Business logic, View where is our UI, Controller control model and view.
+- Flux : Application architecture designed ro built client-side web apps. A design pattern
+- Redux : Open-source JS library used for creating the UI. It generally allows with React & angular 
+- development. The redux takes teh idea of flux design pattern and creating an Open-source library.
+- Redux can be used in React, angular in other library(JS).
+- With learning flux, we can also built similar like redux. 
+- Structure and Data Flow of Flux : Action - Dispatcher - store - View. same as redux.
+- The advantage of Redux library is lightweight. 4kb. 
+- Flux is a design pattern invited by Facebook. With using Redux achieve the design pattern quickly. 
+
+
+## What problem does Redux solve? 
+
+- Basically we use props to share data. Take the data from the server side, we can share that parent to 
+- child. So Props or state we'll use. The complexity are we need to manage a lot of state or use props
+- handel in many places. 
 
 ## Creating React APP Using CLi
 
