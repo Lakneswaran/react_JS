@@ -115,7 +115,7 @@ Basics &amp; Theory a small testings
 - Model where is our Business logic, View where is our UI, Controller control model and view.
 - Flux : Application architecture designed ro built client-side web apps. A design pattern
 - Redux : Open-source JS library used for creating the UI. It generally allows with React & angular 
-- development. The redux takes teh idea of flux design pattern and creating an Open-source library.
+- development. The redux takes the idea of flux design pattern and creating an Open-source library.
 - Redux can be used in React, angular in other library(JS).
 - With learning flux, we can also built similar like redux. 
 - Structure and Data Flow of Flux : Action - Dispatcher - store - View. same as redux.
@@ -128,6 +128,48 @@ Basics &amp; Theory a small testings
 - Basically we use props to share data. Take the data from the server side, we can share that parent to 
 - child. So Props or state we'll use. The complexity are we need to manage a lot of state or use props
 - handel in many places. 
+
+## Fundamental principles of Redux
+
+- Single source of truth: The state of your whole application is stored in an object tree within a single 
+- <u>store</u>. The state inside our application redux will takeover and follow those state.
+- The state is read-only: The only way to change the state is to emit an <u>action</u>, an object describing what 
+- happened. (Redux won't modify your state, it'll read and emit if we give an assignment.)
+- Changes are made with pure functions: To specify how the state tree is transformed by actions, you write 
+- pure <u>reducers</u>. (if you change something by only basic JS functionality).
+- without redux will react writing code will be poor practice. nested class collect data from directly 
+- with parent class.
+- > Redux offers a solution of storing all your application state in one place, called a "store". Components then "dispatch" state changes to the store, not directly to other components. The components that need to be aware of state changes can "subscribe" to the store: 
+
+![Probs classcomp](public/asset/store_dispatch_subscribe.PNG)
+
+- > The stores can be thought of as a "middleman" for all state changes in the application. With redux involved, components don't communicate directly between each other, but rather all state changes must go through the single source of truth, the store.
+
+- > For communication between two components that don't have a parent-child relationship, you can set up your own global event system. Flux pattern is one of the possible ways to arrange this.
+
+- Parent and child we can use props. What if two components needs to communicate and their are not parent-
+- child. Redux library help to communicate.
+
+![Probs classcomp](public/asset/redux_with_out.PNG)
+
+## Redux  Terminology
+
+- Action : CRUD operation, create, read, update and delete
+- Reducers : it wil execute the action. with the action triggered from view and current state. return = 
+- new state
+- Store : manage the state, heart of the redux. which actually store and guards your application state.
+- we can subscribe to state changes in the store and dispatch action to it.
+- Dispatch : If state changing dispatch.
+- Connect : connect to react
+
+![Probs classcomp](public/asset/redux_terminology.PNG)
+
+## Redux Store Methods
+
+- getState() -> get current state. 
+- dispatch(action) -> what type of actions
+- subscribe(listener) -> adds a change listener.
+- replaceReducer(nextReducer) -> multiple reducer doing different task.
 
 ## Creating React APP Using CLi
 
