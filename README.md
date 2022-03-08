@@ -369,7 +369,25 @@ Basics &amp; Theory and testings
 - overwrite  only a: prevObj.a + 10.
 - Second solution: use multiple useStates for a and b.
 
+### useEffect
 
+- To use LifeCycleHook in FC. componentDidMount, componentDidUpdate, componentWilUnmount
+- syntax of useEffect (( =>{})) a call back function passing. -> if one callback func.
+- whenever rerender the component callback function executing itself.
+- solution, use dependency array. }, []). -> if empty array working as componnentdDIdMount lifecycle
+- First time this FC created this useEffect will run. 
+- passing something in dependency array like [val1] -> only run this effect while val1 change.
+- working as componentDidUpdate.
+- For API calling and fetching use ComponentDidMount. - only once fetch the data.
+- https://jsonplaceholder.typicode.com/ -> fake apis
+- > useEffect(()=>{  fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => console.log(json)) }, [])
+
+- [todo, setTodo] = useState({}) -> .then(json => setTodo(json)) we're passing out data to todo.
+- {json.stringify(todo)} -> converting object into string. 
+- Fecth in dynamic. [page]
+- ComponentWillUnMount
 
    
 

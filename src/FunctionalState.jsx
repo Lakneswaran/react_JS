@@ -31,7 +31,7 @@ export default function FunctionalState(){
             <p class="text-slate-400 hover:text-sky-400" onClick={updateCount}>{count}</p>
             <p class="text-slate-400 hover:text-red-400" onClick={() =>setArr( [...arr, 1] )}>{arr.length}</p>
             <p class="text-slate-400 hover:text-green-400" onClick={modifyObj}>{obj.a}</p>
-            <h2 class="text-2xl text-black-800">{ obj.b }</h2>
+            <h2 class="text-2xl text-black-800 hover:animate-spin">{ obj.b }</h2>
            </div>  
         </>
     )
