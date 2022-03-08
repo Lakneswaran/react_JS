@@ -397,8 +397,16 @@ Basics &amp; Theory and testings
 - What is a side effect? When a function modifying variable from other scope.
 - let x = 2 - function sqrt(n) {x=x*n} 
 - When the value of arr change calculate this showMax().
+- [...arr, Math.round(count * Math.random())] -> Taking the values of exiting array and add the random 
+- value with count and push in the arr.
+- use wisely, use for big calculation.
 
-   
+### useRef
 
+- Access DOM directly, Persist a data when component rerender. we can use useRef.
+- If value changing useRef won't rerender. 
+- How to access DOM directly? const inputRef = useRef() -> <input ref={inputRef}> ref point connected.
+- We can focus the input. 
+- component rerender previous state to store. 
 
 

@@ -6,6 +6,7 @@ import FormHandling from './FormHandling';
 import FunctionalState from './FunctionalState';
 import FunctionalEffect from './FunctionalEffect';
 import FunctionalMemo from './FunctionalMemo';
+import FunctionalRef from './FunctionalRef';
 
 
 
@@ -22,6 +23,7 @@ export default function App() {
       <FunctionalState /> 
       {/* <FunctionalEffect />  */}
       <FunctionalMemo />
+      <FunctionalRef />
 
     </div>
   );
