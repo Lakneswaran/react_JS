@@ -5,6 +5,7 @@ import ConditionalFunctcomp from './ConditionalFunctcomp';
 import FormHandling from './FormHandling';
 import FunctionalState from './FunctionalState';
 import FunctionalEffect from './FunctionalEffect';
+import FunctionalMemo from './FunctionalMemo';
 
 
 
@@ -19,7 +20,8 @@ export default function App() {
       <ConditionalFunctcomp />
       <FormHandling /> */}
       <FunctionalState /> 
-      <FunctionalEffect /> 
+      {/* <FunctionalEffect />  */}
+      <FunctionalMemo />
 
     </div>
   );

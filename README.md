@@ -387,7 +387,16 @@ Basics &amp; Theory and testings
 - [todo, setTodo] = useState({}) -> .then(json => setTodo(json)) we're passing out data to todo.
 - {json.stringify(todo)} -> converting object into string. 
 - Fecth in dynamic. [page]
-- ComponentWillUnMount
+- ComponentWillUnMount -in useEffect return a function.
+
+### useMemo
+
+- it's used to memorization a function -> can't do for all function, only for pure function.
+- What is pure function? when we given an input, the output of that should be same as input.
+- function sqrt(n {return n*n}). ANd this function won't create a side effect. 
+- What is a side effect? When a function modifying variable from other scope.
+- let x = 2 - function sqrt(n) {x=x*n} 
+- When the value of arr change calculate this showMax().
 
    
 
