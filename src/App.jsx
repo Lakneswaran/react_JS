@@ -10,6 +10,7 @@ import FunctionalRef from './FunctionalRef';
 import FunctionalContext from './FunctionalContext';
 // import FunctionalContextChild from './FunctionalContextChild';
 import FunctionalRMemo from './FunctionalRMemo';
+import FunctionalCallback from './FunctionalCallback' 
 
 
 
@@ -30,6 +31,7 @@ export default function App() {
       <FunctionalContext />
       {/* <FunctionalContextChild /> */}
       <FunctionalRMemo />
+      <FunctionalCallback />
 
     </div>
   );

@@ -427,5 +427,12 @@ Basics &amp; Theory and testings
 
 ### React.memo()
 
-- 
+- version 16 released. Pure component -> props in component no any changes component won't rerender
+- Same as useMemo() -> using for not rerendering the comp. when no changes.
+- Higher order component - export default memo(bookOne)
 
+### UseCallBack
+
+- With memo we can rerendering process cancelled if no changes, but when because of some function
+- that we have created function passing, triggers again the recreate and rerender.
+- To avoid this -> useCallback function. it's avoid function recreation.
