@@ -7,6 +7,8 @@ import FunctionalState from './FunctionalState';
 import FunctionalEffect from './FunctionalEffect';
 import FunctionalMemo from './FunctionalMemo';
 import FunctionalRef from './FunctionalRef';
+import FunctionalContext from './FunctionalContext';
+// import FunctionalContextChild from './FunctionalContextChild';
 
 
 
@@ -24,6 +26,8 @@ export default function App() {
       {/* <FunctionalEffect />  */}
       <FunctionalMemo />
       <FunctionalRef />
+      <FunctionalContext />
+      {/* <FunctionalContextChild /> */}
 
     </div>
   );

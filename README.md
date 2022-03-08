@@ -409,4 +409,19 @@ Basics &amp; Theory and testings
 - We can focus the input. 
 - component rerender previous state to store. 
 
+### useContext
+
+- use for solve the Props Drilling. 
+- What is props Drilling? App component inside parent comp. inside child comp. 
+- We want to pass a data from App comp. to child comp. Directly not possible.
+- First pass the value as props to parent. Bad practice multiple times passing the props.
+- This is prop drilling. Solution: redux library, context api.
+- Step one: const Context = Creating context(x), Step Two: Creating provider, Step Three: consume
+- step one: React.createContext()
+- step two: passing .this to provider. (root) context.provider value={'books'}
+- Now this value is available to all inside this provider.
+- for that we need to consume. export const Context = React.createContext()
+- In child component consume: const val = useContext(Context) and import from where.
+- import {Context} from './FunctionalContext'
+- p {val}
 
