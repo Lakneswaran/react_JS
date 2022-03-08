@@ -28,7 +28,7 @@ export default function FunctionalEffect() {
 
             const [todo, setTodo] = useState({});
             useEffect(() =>{
-                fetch('https://jsonplaceholder.typicode.com/todos/1')
+                fetch('https://jsonplaceholder.typicode.com/1')
                 .then(response => response.json())
                 .then(json => setTodo(json))
             }, [])

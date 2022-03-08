@@ -15,7 +15,7 @@ export default function FunctionalCallback() {
     return (
 
         <>
-            <div>
+            <div class="mt-20  flex space-x-4">
                 <h3>Count: {count}</h3>
                 <button className="border-green-500 border bg-green-300 hover:bg-green-800" onClick={() => setCount(count + 1)}>Count</button>
 

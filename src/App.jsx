@@ -18,12 +18,12 @@ export default function App() {
   const name = "Lakneswaran"
   return(
     <div>
-      {/* <Newcomponent name={name + " Krish"} title="passing prop" />
+      <Newcomponent name={name + " Krish"} title="passing prop" />
       <h1>Hello World!</h1>
       <Functionalcomp name={name}/>
       <p>First app</p>
       <ConditionalFunctcomp />
-      <FormHandling /> */}
+      <FormHandling />
       <FunctionalState /> 
       {/* <FunctionalEffect />  */}
       <FunctionalMemo />
