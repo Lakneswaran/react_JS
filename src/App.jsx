@@ -3,6 +3,7 @@ import Functionalcomp from './Functionalcomp';
 import Newcomponent from './Newcomponent';
 import ConditionalFunctcomp from './ConditionalFunctcomp';
 import FormHandling from './FormHandling';
+import FunctionalState from './FunctionalState';
 
 
 
@@ -11,11 +12,12 @@ export default function App() {
   return(
     <div>
       {/* <Newcomponent name={name + " Krish"} title="passing prop" />
-      <h1>Hello World!</h1> */}
-      {/* <Functionalcomp name={name}/> */}
-      {/* <p>First app</p> */}
-      {/* <ConditionalFunctcomp /> */}
-      <FormHandling />
+      <h1>Hello World!</h1>
+      <Functionalcomp name={name}/>
+      <p>First app</p>
+      <ConditionalFunctcomp />
+      <FormHandling /> */}
+      <FunctionalState /> 
 
     </div>
   );

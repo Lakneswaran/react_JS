@@ -1,5 +1,5 @@
 # react_JS
-Basics &amp; Theory a small testings 
+Basics &amp; Theory and testings 
 - Explanation about React Native -line 60
 - Redux : line 97
 - Learning and using Tailwind css frameworks. 
@@ -170,6 +170,8 @@ Basics &amp; Theory a small testings
 - dispatch(action) -> what type of actions
 - subscribe(listener) -> adds a change listener.
 - replaceReducer(nextReducer) -> multiple reducer doing different task.
+
+- >  The state is empty, actioncreator gives the action to reducer. The action and current state combining, the new state created by reducer. reducer hands over the new state to the store. The store handsover to the action. 
 
 ## Creating React APP Using CLi
 
@@ -342,7 +344,34 @@ Basics &amp; Theory a small testings
 ![Probs classcomp](public/asset/input_focus.PNG)
 
 
+## use function in details
 
+### useState
+
+- inbuilt react hook, with using this hook we can add a state in FC. 
+- We can only use hooks in FC, not in Class component.
+- useState should execute in same order in every component render.
+- use function should not execute in if, for statement. 
+- const arr = useState(getter, setter ) -> E6 -> const [count, setCount]
+- updateCount(){setCount(count + 1)setCount(count + 1)} => setcount twice exected still inc. 1
+- because of closure. the value come from outerscope as 10 -> 10+1 =11 return each click. 
+- react setter value update in batch. 
+- To solve this method we using callback method. ((prevCount) => prevCount +1) twice inc. 2
+- When state is modifying the entire component will rerender.
+- If we use big calculation function passed to useState. it's execute each time while modifying the state.
+- so make the function as call back function -> it will execute only once. -> performance improve a lot.
+- object -> const [obj, setObj] = useState({a: 1, b: 2})
+- return { a: prevObj.a + 1} -> when setObj called in this prevObj will entire object passed. 
+- the default value passed. in this value we are inc. a by 1.
+- h1 {obj.b} -> vanished, in class component when we return a it will merge, but in useState
+- it will replace entire object. useState({a,b}) -> return a -> useState({a})
+- solution spread operator return { ...obj, a: prevObj.a + 10} -> take first entire properties of obj. and 
+- overwrite  only a: prevObj.a + 10.
+- Second solution: use multiple useStates for a and b.
+
+
+
+   
 
 
 
