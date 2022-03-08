@@ -9,6 +9,7 @@ import FunctionalMemo from './FunctionalMemo';
 import FunctionalRef from './FunctionalRef';
 import FunctionalContext from './FunctionalContext';
 // import FunctionalContextChild from './FunctionalContextChild';
+import FunctionalRMemo from './FunctionalRMemo';
 
 
 
@@ -28,6 +29,7 @@ export default function App() {
       <FunctionalRef />
       <FunctionalContext />
       {/* <FunctionalContextChild /> */}
+      <FunctionalRMemo />
 
     </div>
   );

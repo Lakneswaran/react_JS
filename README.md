@@ -425,3 +425,7 @@ Basics &amp; Theory and testings
 - import {Context} from './FunctionalContext'
 - p {val}
 
+### React.memo()
+
+- 
+
