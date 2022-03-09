@@ -11,6 +11,7 @@ import FunctionalContext from './FunctionalContext';
 // import FunctionalContextChild from './FunctionalContextChild';
 import FunctionalRMemo from './FunctionalRMemo';
 import FunctionalCallback from './FunctionalCallback' 
+import ListAndKeys from './ListAndkeys';
 
 
 
@@ -32,6 +33,7 @@ export default function App() {
       {/* <FunctionalContextChild /> */}
       <FunctionalRMemo />
       <FunctionalCallback />
+      <ListAndKeys />
 
     </div>
   );

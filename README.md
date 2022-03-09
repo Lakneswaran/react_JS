@@ -436,3 +436,12 @@ Basics &amp; Theory and testings
 - With memo we can rerendering process cancelled if no changes, but when because of some function
 - that we have created function passing, triggers again the recreate and rerender.
 - To avoid this -> useCallback function. it's avoid function recreation.
+
+## List & Keys
+
+- WIth useState hooks default values passed a array of object.
+- With setObj we can modify those array. 
+- What is key? - React using to identify an values in array, that is called key. 
+- to add / delete react need to know what exact to modify. 
+- key={i} -> index is changeable value, so don't use that. -> {item.id} 
+- We should not use dynamic changing value using as key. -> using index causing rerendering. 
