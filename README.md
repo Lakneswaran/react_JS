@@ -445,3 +445,8 @@ Basics &amp; Theory and testings
 - to add / delete react need to know what exact to modify. 
 - key={i} -> index is changeable value, so don't use that. -> {item.id} 
 - We should not use dynamic changing value using as key. -> using index causing rerendering. 
+
+## React.Fragment
+
+- Component atleast have return one element. <> </> fragments to save memory. 
+- previous version : <Fragments> </Fragments>
